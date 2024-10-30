@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking form</title>
+</head>
+
+<body>
+    <h1>Shecdule your holiday on paradise island</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information
+            </legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="fullname" required />
+            <br /><br />
+            <label for="email">Email</label>
+            <input type="Email" id="mail" name="email" placeholder="abc@gmail.com" required />
+            <br /><br />
+
+            <label for="num"> Phone number:
+            </label>
+            <input type="tel" id="num" name="Phone " pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="91-8265086426"
+                required />
+            <br /><br />
+            <label for="DOB">Date Of Birth</label>
+            <input type="date" id="DOB" name="DOB" min=2021-01-01 max=2025-01-01 required />
+        </fieldset>
+        <fieldset>
+            <legend>Trip Details</legend>
+
+
+            <label for="arr">Arrivel</label>
+            <input type="datetime-local" id="arr" name="arrivel" required />
+            <br /><br />
+            <label for="Dep">Depature</label>
+            <input type="datetime-local" id="Dep" name="Depature" required />
+            <br /><br />
+
+            <label for="travellers">Number Of Travellers</label>
+            <input type="number" id="travellers" name="Activities" />
+            <br /><br />
+            <lable for="pref"> Accomandation preferance</lable>
+            <select name="accomadation" id="pref">
+                <optgroup label="hotels">
+                    <option value="3-star">3-star</option>
+                    <option value="4-star">4-star</option>
+                    <option value="5-star">5-star</option>
+                </optgroup>
+                <option value="rooms">rooms</option>
+                <option value="tent">tent</option>
+            </select>
+            <br /><br />
+            <fieldset>
+                <legend> prefered Activities</legend>
+                <input type="checkbox" id="snorckling" name="Activities" value="snorckling" />
+                <label for="snorckling">snorckling</label><br />
+                <input type="checkbox" id="hiking" name="Activities" value="hiking" />
+                <label for="hiking">hiking</label><br />
+                <input type="checkbox" id="spa" name="spa" value="spa" />
+                <label for="spa">spa</label><br /><br />
+            </fieldset>
+
+            <p><b>Baby On Board</b></p>
+            <input type="radio" name="on board" value="yes" />
+            <label>yes</label>
+            <input type="radio" name="on board" value="no" />
+            <label>no</label>
+
+            <br /><br />
+            <p><b>Special Request</b></p>
+            <textarea cols="30" rows="10"></textarea>
+            <br /><br />
+        </fieldset>
+        <br /><br />
+        <!-- <input type="submit"/>
+       <input type="reset"/>
+       <input type="button" value="button"/> -->
+        <button type="submit"><img
+                src="https://png.pngtree.com/png-clipart/20230417/original/pngtree-click-the-red-submit-button-icon-png-image_9059905.png"
+                width="30" height="30" />
+        </button>
+        <button type="reset">reset</button>
+        <button type="button">button</button>
+    </form>
+
+
+
+</body>
+
+</html>
