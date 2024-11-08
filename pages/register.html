@@ -10,8 +10,8 @@
         <a href="index.html"><img src="../multimedia/new_cn_logo.svg"/></a>
         <h1>Create an Account</h1>
         </header>
-        <section>
-            <form>
+        <section id="registration form">
+            <form action="#" method="post">
                 <fieldset>
                     <legend>Personal Information
                     </legend>
@@ -22,10 +22,36 @@
                     <input type="Email" id="mail" name="email" placeholder="abc@gmail.com" required />
                     <br /><br />
                     <label for="username">username</label>
-                    <input type="username" id="username" name="username" placeholder="enter your username" required />
+                    <input type="text" id="username" name="username" placeholder="enter your username" required />
                     <br /><br />
                     <label for="password">password</label>
-                    <input type="password" id="password" name="password" required />
+                    <input type="password" id="password" name="password"
+                    minlength="6"
+                    maxlength="8" required />
+                    <br />
+                    <br />
+                    <label for="usertype">User Type</label>
+                    <select id="usertype" name="usertype" required >
+                        <option value=""disable selected>select user type</option>
+                        <option value="student">student</option>
+                        <option value="instructor">instructor</option>
+                    </select>
+                    <br />
+                    <br />
+                    <label for="selectcourse">select course</label>
+                    <select id="usertype" name="usertype" required >
+                        <option value="course1-web development">course1-web development</option>
+                        <option value="course2-data science">course2-data data-science</option>
+                        <option value="course3-digitalmarketing">course3-digital-marketing</option>
+                        <option value="course4-android-development">course4-android_development</option>
+                    </select>
+                        <br />
+
+                        <br />
+                        <button type="submit">Register</button>
+
+                   
+                    </fieldset>
 
                 </section>
 </body>
