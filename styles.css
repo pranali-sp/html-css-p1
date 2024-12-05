@@ -1,0 +1,41 @@
+/* #span1 {
+  background-color: aqua;
+  width: 400px;
+  height: 100px;
+  margin: 20px 10px 5px;
+}
+#div1 {
+  background-color: blue;
+  width: 400px;
+  height: 100px;
+  padding: 10px;
+  display: inline-block;
+  list-style-image: disc;
+}
+
+.pricing {
+  padding: 10px;
+  margin: 20px;
+}
+
+.price-table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 2px solid #ddd;
+  padding: 15px;
+  font-weight: 400;
+}
+
+th {
+  background-color: #2980b9;
+  color: white;
+}
+
+td {
+  background-color: #fff;
+} */

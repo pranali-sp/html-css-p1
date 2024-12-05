@@ -1,0 +1,78 @@
+ /* #container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    width: 80vw;
+    height: 80vh;
+    border: 2px solid blue;
+    grid-auto-rows: minmax(400px auto)
+    gap: 20px 10px;
+
+    justify-content: end;  
+    justify-items: end;
+     place-items: center; 
+     align-items: end; 
+     row-gap: 20px; 
+     column-gap: 20px; 
+    grid-auto-rows: 100px ; 
+    grid-template-columns: repeat(3,1fr); 
+    * grid-template-columns: auto;
+
+}
+
+.box{
+    background-color: lightgreen;
+    border: 1px dotted green;
+    border-radius: 10px;
+    padding: 20px;
+}
+#box1{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+#box2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+#box5{
+    grid-column: 2/4;
+}  */
+
+#container{
+    display: grid;
+    width: 80vw;
+    height: 90vw;
+    grid-template-rows: 100px 1fr 30px;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: "head head" "nav main"  "nav foot";
+    grid-gap: 10px;
+}
+header{
+    grid-area: head;
+    background-color: lightblue;
+
+}
+nav{
+    grid-area: nav;
+    background-color: lightgreen;
+}
+main{
+    grid-area: main;
+    background-color: lightpink;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(50px,auto));
+    grid-auto-rows: 100px;
+    justify-content: space-evenly;
+    gap: 10px 20px;
+    align-content: center;
+}
+.card{
+    padding: 20px;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid yellow;
+    border-radius: 5px;
+}
+footer{
+    grid-area: foot;
+    background-color: lightgray;
+}

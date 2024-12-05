@@ -1,0 +1,43 @@
+ #container{
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 90vh;
+    align-items:end; 
+    align-content: space-around;
+     /* align-content: center ; */
+     /* justify-content: space-around;  */
+   align-self:
+
+.box{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2em;
+    
+}
+
+#box1{
+    background-color: lightcoral;
+    line-height: 100px;
+    
+    
+}
+#box2{
+    background-color: lightgreen;
+    height: 50px;
+    
+}
+
+#box3{
+    background-color: lightblue;
+   
+}
+
+#box4{
+    background-color: lightpink;
+    font-size: 4em;
+} 
+
